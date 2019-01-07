@@ -2,7 +2,7 @@
 var rot = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight, WEBGL);
+  createCanvas(windowWidth/2, windowHeight/2, WEBGL);
   noStroke();
   angleMode("degrees");
   stroke(0);
@@ -16,12 +16,11 @@ function Cube(x, y) {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight, WEBGL);
+  resizeCanvas(windowWidth/2, windowHeight/2, WEBGL);
 }
 
 function draw() {
   rot = rotationX || frameCount;
-  console.log(rot)
 
   // Background
   background(200);
