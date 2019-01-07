@@ -15,7 +15,7 @@ function draw() {
   background(200);
   println(rotationX);
 
-  rotateX(rotationX);
+  rotateX(45);
   box(200, 200, 200);
 
 }
