@@ -20,7 +20,7 @@ function windowResized() {
 }
 
 function draw() {
-  rot = rotationX || frameCount;
+  rot = rotationZ || frameCount;
 
   // Background
   background(200);
