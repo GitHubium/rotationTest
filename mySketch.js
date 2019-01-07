@@ -13,8 +13,8 @@ function windowResized() {
 function draw() {
   // Background
   background(200);
-  println(rotationX);
-
+  console.log(rotationX);
+  
   rotateX(45);
   box(200, 200, 200);
 
