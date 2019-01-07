@@ -5,6 +5,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   noStroke();
   angleMode("degrees");
+  stroke(0);
+  strokeWeight(2);
 
 }
 
