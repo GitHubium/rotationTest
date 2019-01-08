@@ -21,18 +21,26 @@ function windowResized() {
 }
 
 function draw() {
-  rot = accelerationX*100 || frameCount;
-  fill(0);
-  text(rot, windowWidth/2, windowHeight/2);
-
-
   // Background
   background(200);
+
+  rot = accelerationX*100;
+  fill(0, 255, 0);
+  textSize(80);
+  //console.log(rotationX, rotationY, rotationZ);
+  if (rot === null) {
+    text("null...", 10, 100);
+  } else  {
+    text(rot, 10, 100);
+  }
+
+
+
 
   fill(255);
   push();
     translate(width/2, height/2);
-    rotate(rot);
+    rotate(-rot);
     rect(0, 0, 300, 300);
   pop();
 
